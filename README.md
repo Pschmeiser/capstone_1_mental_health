@@ -53,3 +53,6 @@ The null hypothesis: The percentage occurrence of mental illness is equal betwee
 The alternative hypothesis: Women have a higher chance of mental illness.
 
 The confidence interval selected for this data was once again 95%.  The resulting z score was 6.60 with a resulting p-value once again near zero.  With this result we choose to reject the null hypothesis and find that women do in fact have a higher chance of mental illness.
+
+### Further Exploration
+With this data I would like to explore a few things in the future.   First with the two metrics already proven to be significant I would like to fit a predictive model to each of them.  Additionally in the the data there are a large number of metrics involving the willingness of each person to communicate with others about a possible issue.  I would like to create a new score that compiles each of these into an overall communication score.  Then based on this score I would see if the chances of mental illness can accurately be predicted.  The potential for an accurate model could be high as there is a large amount of information that can influence the individuals score resulting in the potential for a highly predictive model.
