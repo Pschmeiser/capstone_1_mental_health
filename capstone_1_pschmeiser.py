@@ -10,7 +10,7 @@ from numpy import sqrt
 %matplotlib inline
 plt.style.use('ggplot')
 # %%
-mental_df = pd.read_csv('mental_health.csv')
+mental_df = pd.read_csv('data/mental_health.csv')
 mental_df.head()
 # %%
 mental_df.info()
