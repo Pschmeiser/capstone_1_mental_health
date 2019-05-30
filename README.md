@@ -40,3 +40,16 @@ The null hypothesis used was: The percentage of occurence of no family history a
 The alternative hypothesis: Having a family history of mental illness results in a higher chance of mental illness.
  
 The confidence interval selected for this data was 95%.  The resulting z score was 13.42 with a p-value of near zero.  For this reason we reject the null hypothesis and find that having a history of mental illness results in a higher chance for mental illness.
+
+#### Sex
+
+The final metric that was explored was that of sex.   This was done with the previously cleaned data explained above.   The resulting data was plotted and examined.
+<img src ="images/illness_sex.png" />
+
+As the data clearly indicates there is clearly a larger percentage of occurence in females over males.  Therefore the data underwent hypothesis testing
+
+The null hypothesis: The percentage occurrence of mental illness is equal between men and women.
+
+The alternative hypothesis: Women have a higher chance of mental illness.
+
+The confidence interval selected for this data was once again 95%.  The resulting z score was 6.60 with a resulting p-value once again near zero.  With this result we choose to reject the null hypothesis and find that women do in fact have a higher chance of mental illness.
