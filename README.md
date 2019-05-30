@@ -11,3 +11,9 @@ The dataset did require a large amount of cleaning specifically in the gender co
 Two other metrics, company size and family history of mental illness, were also explored.  From the initial EDA and plotting two metrics indicated some significance and underwent hypothesis testing.
 
 #### Cleaning of the Data
+As mentioned above the gender column required a large amount of cleaning in order to remove user input data that was not uniform.  This can be seen here by examining the unique results from the column. 
+<img src ="images/gender_unique.png" />
+
+After a large series of replacement commands the data was made to be uniform.  The resulting amount of data points where however reduced from 1260 to 1240.
+
+Thankfully for the remaining metrics of family history and company size no cleaning had to be done.
