@@ -25,4 +25,9 @@ To examine each metric, sex, company size, and family history, initially through
 
 #### Company Size
 
-The first metric explored was company size.  As stated above a plot for percentage occurance 
+The first metric explored was company size.  As stated above a plot for percentage occurrence per company size was made. 
+ <img src ="images/illness_size.png" />
+
+As shown from the plot above there appears to be no relation in company size to the occurrence of mental illness and therefore the data was not hypothesis tested.
+
+#### Family History of Mental Illness
