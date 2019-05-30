@@ -20,3 +20,9 @@ Thankfully for the remaining metrics of family history and company size no clean
 
 #### Methods
 To examine each metric, sex, company size, and family history, initially through the use of seaborn the normalized percentage occurrence was plotted.  From this information two metrics appeared to have some significance and required hypothesis testing.   An example of the method used for the two proportion can be found here (https://newonlinecourses.science.psu.edu/stat414/node/268/).
+
+### Results
+
+#### Company Size
+
+The first metric explored was company size.  As stated above a plot for percentage occurance 
