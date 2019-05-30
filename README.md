@@ -31,3 +31,12 @@ The first metric explored was company size.  As stated above a plot for percenta
 As shown from the plot above there appears to be no relation in company size to the occurrence of mental illness and therefore the data was not hypothesis tested.
 
 #### Family History of Mental Illness
+The next metric that was explored was that of family history of mental illness.  The initial plot via seaborn can be seen below.
+<img src ="images/illness_history.png" />
+
+As we can see from the plot it there appears to be a much larger percentage of mental illness in those with a family history.  For this reason the data underwent hypothesis testing.  
+
+The null hypothesis used was: The percentage of occurence of no family history and a family history would be equal.  
+The alternative hypothesis: Having a family history of mental illness results in a higher chance of mental illness.
+ 
+The confidence interval selected for this data was 95%.  The resulting z score was 13.42 with a p-value of near zero.  For this reason we reject the null hypothesis and find that having a history of mental illness results in a higher chance for mental illness.
