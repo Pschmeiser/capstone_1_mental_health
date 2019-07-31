@@ -69,19 +69,12 @@ if __name__ == "__main__":
     X_train.shape
     y_train.shape
 
-    # classes are imbalance
-    # use SMOTE to create balanced classes
-    sm = SMOTE(random_state=42)
-    X_train_SMOTE, y_train_SMOTE = sm.fit_resample(X_train, y_train)
-    X_test_SMOTE, y_test_SMOTE = sm.fit_resample(X_test, y_test)
+
 
     # tune hyper-parameters
     trees = [x for x in range(50, 1000, 50)]
-
     deep = [x for x in range(10, 500, 10)]
 
-    # vary_trees_graph(trees, X_train_SMOTE, X_test_SMOTE, y_train_SMOTE, y_test_SMOTE)
-    # vary_trees_depth(deep, X_train_SMOTE, X_test_SMOTE, y_train_SMOTE, y_test_SMOTE)
 
     vary_trees_graph(trees, X_train, X_test, y_train, y_test)
     vary_trees_depth(deep, X_train, X_test, y_train, y_test)
@@ -90,8 +83,6 @@ if __name__ == "__main__":
 
     # test model performance
     sampled_probs = calculate_stats(rf, X_train, X_test, y_train, y_test)
-
-    rf_SMOTE = rf.fit(X_train_SMOTE, y_train_SMOTE)
     rf = rf.fit(X_train, y_train)
     best_rf_model = open('models/best_rf_model.pkl', 'wb')
     pickle.dump(rf, best_rf_model)
@@ -108,7 +99,7 @@ if __name__ == "__main__":
     plt.figure(figsize= (12,8))
     sns.barplot(df_importances['features'][:10], feature_names[:10])
     plt.tight_layout()
-    plt.savefig('images/features.png',din=10)
+    plt.savefig('images/features2.png',din=10)
     y_pred = rf.predict(X_test)
     accuracy = metrics.accuracy_score(y_true=y_test, y_pred=y_pred)
     precision = metrics.precision_score(y_true=y_test, y_pred=y_pred)
